@@ -21,3 +21,7 @@ jobs:
 
       - name: Run Python application
         run: python app.py
+      - name: Print secret value
+        run: echo "My name is :${{ secrets.MY_NAME}}"
+
+
