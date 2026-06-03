@@ -21,7 +21,9 @@ jobs:
 
       - name: Run Python application
         run: python app.py
-      - name: Print secret value
-        run: echo "My name is :${{ secrets.MY_NAME}}"
+
+      - name: Build Docker image
+        run: docker build -t sre-demo:v1 .
+
 
 
